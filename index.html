@@ -24,21 +24,26 @@
 </head>
 <body>
 <!--header-->
-<header>
-    <div class="">
-        <img src="images/favicon.ico" alt="logo">
-        <h1 a href="#">Sophia</h1>
-    </div>
-   <nav>
-    <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">My work</a></li>
-        <li><a href="#testimonial">Testimonial</a></li>
-        <li><a href="#contact">Contact</a></li>
+<header class="header">
+  <div class="header__logo">
+    <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+    <h1 class="header__logo__title"><a href="#">Sophia</a></h1>
+  </div>
+  <nav class="header__nav">
+    <ul class="header__menu">
+      <li><a class="header__menu__item active" href="#home">Home</a></li>
+      <li><a class="header__menu__item" href="#about">About</a></li>
+      <li><a class="header__menu__item" href="#skills">Skills</a></li>
+      <li><a class="header__menu__item" href="#work">My work</a></li>
+      <li>
+        <a class="header__menu__item" href="#testimonial">Testimonial</a>
+      </li>
+      <li><a class="header__menu__item" href="#contact">Contact</a></li>
     </ul>
-   </nav>
+  </nav>
+  <button class="header__toggle" aria-label="navigation menu toggle">
+    <i class="fa-solid fa-bars"></i>
+  </button>
 </header>
 <!--Main-->
 <main>
@@ -49,6 +54,7 @@
        <P>A Front-end developer current residing in New york.</P>
        <a href="#contact">Contact me</a>
     </section>
+   
     <!--About-->
     <section id="about">
         <h2>About me</h2>
@@ -72,7 +78,8 @@
             </li>
         </ul>
      </section>
-    <!--Skills-->
+   
+     <!--Skills-->
     <section id="skills" class="section">
         <div class="max-container">
           <h2 class="title">My Skills</h2>
@@ -158,7 +165,8 @@
           </div>
         </div>
       </section>
-    <!--Work-->
+   
+      <!--Work-->
     <section id="work">
         <div class="max-container">
         <h2>My work</h2>
@@ -277,6 +285,7 @@
           </ul>
         </div>
     </section>
+   
     <!--Testimonial-->
     <section id="testimonial" class="section max-container">
         <h2 class="title">Testimonial</h2>
@@ -349,6 +358,7 @@
             </a>
           </aside>
 </main>
+
 <!--Footer-->
 <footer id="contact" class="section">
     <div class="max-container">
