@@ -96,7 +96,8 @@
               <ul>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>HTML</span><span>98%</span>
+                    <span>HTML</span>
+                    <span>98%</span>
                   </div>
                   <div class="bar__bg">
                     <div class="bar__value" style="width: 98%"></div>
@@ -167,17 +168,33 @@
       </section>
    
       <!--Work-->
-    <section id="work max-container">
+      <section id="work" class="section">
         <div class="max-container">
-        <h2 class="title">My work</h2>
-        <p class="description">Projects</p>
-        <ul>
-            <li><button>All <span>8</span></button></li>
-            <li><button>Front-End<span>3</span></button></li>
-            <li><button>Micro responsive websites <span>3</span></button></li>
-            <li><button>Responsive email coding <span>3</span></button></li>
-        </ul>
-        <ul class="projects">
+          <h2 class="title">My work</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">8</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="front-end">
+                Front-end <span class="category__count">4</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="back-end">
+                Back-end <span class="category__count">2</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="mobile">
+                Mobile <span class="category__count">2</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
             <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
@@ -284,7 +301,7 @@
             </li>
           </ul>
         </div>
-    </section>
+      </section>
    
     <!--Testimonial-->
     <section id="testimonial" class="section max-container">
