@@ -115,6 +115,11 @@ section{
     margin: 0.5rem 0;
   }
 
+.max-container{
+    max-width: var(--size-max-width);
+    margin:auto;
+}
+
 /*home*/
 #home{
     background-color: var(--color-primary);
@@ -195,3 +200,4 @@ section{
   .major:hover .major__icon {
     transform: rotate(-15deg) scale(1.2);
   }
+
