@@ -161,3 +161,37 @@ section{
    outline:2px solid var(--color-accent);
   }
   
+  /*About */
+ .majors{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2.5rem 0;
+ } 
+
+ .major{
+    flex-basis: 30%;
+    background-color: var(--color-primary-variant);
+    padding:2rem 1rem;
+    color:var(--color-text);
+    border-radius: 1rem;
+    cursor:default;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+ }
+
+ .major__icon {
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease;
+  }
+  
+  .major__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .major:hover .major__icon {
+    transform: rotate(-15deg) scale(1.2);
+  }
