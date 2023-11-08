@@ -17,6 +17,7 @@
   --color-gray: #1b1e26;
   --color-yellow:#f5b52e;
   --color-pink:#ef0f71;
+  --color-dark:#000;
 
   /* Size */
   --size-max-width: 1200px;
@@ -507,6 +508,31 @@ button:focus {
   transition: opacity 300ms ease-in;
 }
 
+#lastPart{
+  background-color: var(--color-dark-orange);
+  color: var(--color-text);
+  position:relative;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contact__link {
+  transition: color 250ms ease-in;
+}
+
+.contact__link:hover {
+  color: var(--color-accent);
+}
+
+.EmptyBox{
+  padding:30px 0;
+}
 /* Footer */
 #contact {
   background-color: var(--color-dark-orange);
@@ -529,7 +555,7 @@ button:focus {
 }
 
 
-.contact__links {
+/* .contact__links {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -543,7 +569,7 @@ button:focus {
 
 .contact__link:hover {
   color: var(--color-accent);
-}
+} */
 
 @media screen and (max-width: 768px) {
   .section {
