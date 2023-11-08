@@ -9,10 +9,14 @@
 
   /* Colors */
   --color-white: #ffffff;
-  --color-black: #050a13;
+  --color-black: #22368e;
   --color-blue: #03e8f9;
-  --color-orange: #fd6413;
+  --color-light-blue:#4364f3;
+  --color-orange: #fe630d;
+  --color-dark-orange:#f73e37;
   --color-gray: #1b1e26;
+  --color-yellow:#f5b52e;
+  --color-pink:#ef0f71;
 
   /* Size */
   --size-max-width: 1200px;
@@ -20,9 +24,12 @@
     /* Background */
     --home-bg-gradient: linear-gradient(
       180deg,
-      rgba(8, 26, 60, 1) 0%,
-      rgba(5, 10, 19, 1) 100%
+      rgba(20,76,223,1) 0%, 
+      rgba(34,54,142,1) 100%
     );
+ /* --home-bg-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(122,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='3.63'%3E%3Cpath transform='translate(-3.5 -2) rotate(-2 1409 581) scale(0.985)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='1.2100000000000002' transform='translate(-12.5 5) rotate(-1 800 450) scale(0.998)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(-3.5 7.5) rotate(-12.5 401 736) scale(0.998)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='1.1'%3E%3Cpath transform='translate(30 3) rotate(-0.75 150 345) scale(1.005)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='2.4200000000000004' transform='translate(7.5 -15) rotate(-18 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-2 -2) rotate(-3 1400 132) scale(0.975)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+--home-bg-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='295' height='295' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%230861AD' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%2306617A'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"); 
+--home-avatar-svg: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1800" fill="%23FFC03C"><path d="M1386.57 181.4c160.9 73.74 328.5 149.72 424.59 281.57 96.09 129.61 118.44 315.09 98.33 487.16-20.11 172.07-84.92 332.97-187.71 446.94-105.03 116.2-250.29 185.48-391.07 243.58-138.55 60.34-272.63 109.5-393.31 91.62-122.91-17.88-234.64-102.8-377.66-160.9-143.02-58.1-317.33-87.15-406.71-183.24-89.39-96.09-96.09-261.46 2.23-368.72 98.33-109.5 301.68-160.9 384.37-270.4 82.68-111.73 42.46-283.81 84.92-422.36C669.24 188.1 798.86 80.83 937.41 60.72c140.79-20.11 290.51 49.16 449.17 120.67Z"></path></svg>');    
 
   /*Divider */
   --divider-single-wave: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" > <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" ></path> </svg>');
@@ -154,11 +161,11 @@ button:focus {
 }
 
 .header__menu__item:hover {
-  border-bottom: 1px solid var(--color-accent);
+  border-bottom: 2px solid var(--color-orange);
 }
 
 .header__menu__item.active {
-  border: 1px solid var(--color-accent);
+  border: 2px solid var(--color-orange);
   border-radius: 4px;
 }
 
@@ -166,7 +173,7 @@ button:focus {
 #home {
   position: relative;
   background-color: var(--color-primary);
-  background: var( --home-bg-gradient);
+  background-image: var(--home-bg-svg);
   color: var(--color-text);
   padding: 5rem 1rem;
   padding-top: 7rem;
@@ -193,7 +200,7 @@ button:focus {
   height: 250px;
   object-fit: cover;
   border-radius: 100%;
-  border: 3px solid var(--color-accent);
+  border: 3px solid var(--color-orange);
 }
 
 .home__title {
@@ -202,7 +209,7 @@ button:focus {
 }
 
 .home__title--strong {
-  color: var(--color-accent);
+  color: var(--color-orange);
 }
 
 .home__description {
@@ -211,8 +218,8 @@ button:focus {
 
 .home__contact {
   display: inline-block;
-  background-color: var(--color-accent);
-  color: var(--color-black);
+  background-color: var(--color-orange);
+  color: var(--color-white);
   margin: 2rem;
   padding: 0.5rem 1rem;
   font-weight: bold;
@@ -222,7 +229,7 @@ button:focus {
 .home__contact:hover {
   background-color: transparent;
   color: var(--color-text);
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-orange);
 }
 
 /* About */
@@ -234,6 +241,7 @@ button:focus {
 }
 
 .major {
+  flex-basis: 32%;
   background-color: var(--color-primary-variant);
   padding: 2rem 1rem;
   color: var(--color-text);
@@ -245,7 +253,7 @@ button:focus {
 .major__icon {
   font-size: 4rem;
   margin: 1rem 0;
-  color: var(--color-accent);
+  color: var(--color-orange);
   transition: all 300ms ease;
 }
 
@@ -286,22 +294,6 @@ button:focus {
   position: relative;
 }
 
-
-#skills::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: calc(118% + 1.3px);
-  height: 60px;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-  background-color: var(--color-primary);
-  mask: var(--divider-multi-wave);
-  -webkit-mask: var(--divider-multi-wave);
-}
-
 .skills {
   display: grid;
   grid-template-columns: 6fr 4fr;
@@ -315,7 +307,7 @@ button:focus {
 }
 
 .skills__title {
-  color: var(--color-accent);
+  color: var(--color-orange);
   margin: 1rem 0;
   font-size: 1.2rem;
 }
@@ -356,7 +348,7 @@ button:focus {
 
 .bar__value {
   height: 3px;
-  background-color: var(--color-accent);
+  background-color: var(--color-orange);
 }
 
 /* Work */
@@ -378,14 +370,14 @@ button:focus {
   font-size: 1.1rem;
   padding: 0.5rem 3rem;
   border-radius: 4px;
-  border: 1px solid var(--color-accent);
+  border: 1px solid var(--color-orange);
   cursor: pointer;
   white-space: nowrap;
 }
 
 .category--selected {
-  background-color: var(--color-accent);
-  color: var(--color-primary);
+  background-color: var(--color-light-blue);
+  color: var(--color-white);
 }
 
 .category__count {
@@ -413,6 +405,7 @@ button:focus {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
+  padding-bottom: 30px;
   transition: all 250ms ease-out;
 }
 
@@ -510,13 +503,13 @@ button:focus {
   height: 4.5rem;
   border-radius: 100%;
   text-align: center;
-  box-shadow: 5px 5px 0px 0px var(--color-accent);
+  box-shadow: 5px 5px 0px 0px var(--color-orange);
   transition: opacity 300ms ease-in;
 }
 
 /* Footer */
 #contact {
-  background-color: var(--color-primary);
+  background-color: var(--color-dark-orange);
   color: var(--color-text);
   position:relative;
 }
@@ -531,8 +524,8 @@ button:focus {
   overflow: hidden;
   line-height: 0;
   background-color: var(--color-white);
-  mask: var(--divider-arrow);
-  -webkit-mask: var(--divider-arrow);
+  mask: var(--divider-multi-wave);
+  -webkit-mask: var(--divider-multi-wave);
 }
 
 
