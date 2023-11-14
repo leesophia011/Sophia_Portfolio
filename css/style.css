@@ -9,7 +9,7 @@
 
   /* Colors */
   --color-white: #ffffff;
-  --color-black: #22368e;
+  --color-black: #171A53;
   --color-blue: #03e8f9;
   --color-light-blue:#4364f3;
   --color-orange: #fe630d;
@@ -234,6 +234,7 @@ button:focus {
 }
 
 /* About */
+
 .majors {
   display: flex;
   justify-content: space-between;
@@ -243,9 +244,9 @@ button:focus {
 
 .major {
   flex-basis: 32%;
-  background-color: var(--color-primary-variant);
+  background-color: #f6f6f6;
   padding: 2rem 1rem;
-  color: var(--color-text);
+  color: #000;;
   border-radius: 1rem;
   cursor: default;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
@@ -268,29 +269,9 @@ button:focus {
   transform: rotate(-15deg) scale(1.2);
 }
 
-.jobs {
-  text-align: start;
-}
-
-.job {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 1rem;
-}
-
-.job__name {
-  color: var(--color-primary);
-}
-
-.job__period {
-  color: var(--color-primary);
-  font-size: 0.8rem;
-}
-
 /* Skills */
 #skills {
-  background-color: var(--color-primary-variant);
+  background-color: #fafafa;
   color: var(--color-text);
   position: relative;
 }
@@ -301,10 +282,12 @@ button:focus {
   margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+  /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    0 100px 80px rgba(0, 0, 0, 0.12); */
 }
 
 .skills__title {
@@ -349,13 +332,23 @@ button:focus {
 
 .bar__value {
   height: 3px;
-  background-color: var(--color-orange);
+  background-color:  var(--color-white);
 }
 
 /* Work */
 #work {
   background-color: var(--color-primary);
   color: var(--color-text);
+}
+
+.work__btn{
+  display: inline-block;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 4px;
 }
 
 .categories {
@@ -371,13 +364,13 @@ button:focus {
   font-size: 1.1rem;
   padding: 0.5rem 3rem;
   border-radius: 4px;
-  border: 1px solid var(--color-orange);
+  border: 1px solid  var(--color-accent);
   cursor: pointer;
   white-space: nowrap;
 }
 
 .category--selected {
-  background-color: var(--color-light-blue);
+  background-color:  var(--color-accent);
   color: var(--color-white);
 }
 
@@ -442,7 +435,7 @@ button:focus {
 }
 
 .project__metadata:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   transform: translateY(0px);
 }
 

@@ -21,26 +21,7 @@ categories.addEventListener('click', (event) => {
   setTimeout(() => {
    projectsContainer.classList.remove('anim-out');
 }, 250);
-//   handleActiveSelection(event.target);
-//   filterProjects(filter);
+
 });
 
-// function handleActiveSelection(target) {
-//   const active = document.querySelector('.category--selected');
-//   active.classList.remove('category--selected');
-//   target.classList.add('category--selected');
-// }
 
-// function filterProjects(filter) {
-//   projects.forEach((project) => {
-//     if (filter === 'all' || filter === project.dataset.type) {
-//       project.style.display = 'block';
-//     } else {
-//       project.style.display = 'none';
-//     }
-//   });
-//   projectsContainer.classList.add('anim-out');
-//   setTimeout(() => {
-//     projectsContainer.classList.remove('anim-out');
-//   }, 250);
-// }
