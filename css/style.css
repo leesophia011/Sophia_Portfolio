@@ -6,11 +6,13 @@
   --color-accent: var(--color-blue);
   --color-accent-variant: var(--color-orange);
   --color-text: var(--color-white);
+  --color-point:var(--color-light-green);
 
   /* Colors */
   --color-white: #ffffff;
   --color-black: #171A53;
   --color-blue: #03e8f9;
+  --color-light-green:#5BE9B9;
   --color-light-blue:#4364f3;
   --color-orange: #fe630d;
   --color-dark-orange:#f73e37;
@@ -162,11 +164,11 @@ button:focus {
 }
 
 .header__menu__item:hover {
-  border-bottom: 2px solid var(--color-orange);
+  border-bottom: 2px solid var(--color-point);
 }
 
 .header__menu__item.active {
-  border: 2px solid var(--color-orange);
+  border: 2px solid var(--color-point);
   border-radius: 4px;
 }
 
@@ -201,7 +203,7 @@ button:focus {
   height: 250px;
   object-fit: cover;
   border-radius: 100%;
-  border: 3px solid var(--color-orange);
+  border: 3px solid var(--color-point);
 }
 
 .home__title {
@@ -210,7 +212,7 @@ button:focus {
 }
 
 .home__title--strong {
-  color: var(--color-orange);
+  color: var(--color-point);
 }
 
 .home__description {
@@ -219,8 +221,8 @@ button:focus {
 
 .home__contact {
   display: inline-block;
-  background-color: var(--color-orange);
-  color: var(--color-white);
+  background-color: var(--color-point);
+  color: var(--color-dark);
   margin: 2rem;
   padding: 0.5rem 1rem;
   font-weight: bold;
@@ -230,7 +232,7 @@ button:focus {
 .home__contact:hover {
   background-color: transparent;
   color: var(--color-text);
-  outline: 2px solid var(--color-orange);
+  outline: 2px solid var(--color-point);
 }
 
 /* About */
@@ -255,7 +257,8 @@ button:focus {
 .major__icon {
   font-size: 4rem;
   margin: 1rem 0;
-  color: var(--color-orange);
+  color: var(--color-point);
+  -webkit-text-stroke: .7px black;
   transition: all 300ms ease;
 }
 
@@ -291,7 +294,7 @@ button:focus {
 }
 
 .skills__title {
-  color: var(--color-orange);
+  color: var(--color-point);
   margin: 1rem 0;
   font-size: 1.2rem;
 }
@@ -302,8 +305,10 @@ button:focus {
   background-color: var(--color-primary);
 }
 
-.skills__tools {
-  padding: 1rem;
+.skills__tools{
+  padding:1rem;
+  background-color: var(--color-primary);
+  filter: brightness(200%);
 }
 
 .skills__etc {
@@ -332,7 +337,7 @@ button:focus {
 
 .bar__value {
   height: 3px;
-  background-color:  var(--color-white);
+  background-color:  var(--color-point);
 }
 
 /* Work */
@@ -343,8 +348,8 @@ button:focus {
 
 .work__btn{
   display: inline-block;
-  background-color: var(--color-orange);
-  color: var(--color-white);
+  background-color: var(--color-point);
+  color: var(--color-dark);
   margin: 1rem;
   padding: 0.5rem 1rem;
   font-weight: bold;
@@ -364,14 +369,14 @@ button:focus {
   font-size: 1.1rem;
   padding: 0.5rem 3rem;
   border-radius: 4px;
-  border: 1px solid  var(--color-accent);
+  border: 2px solid  var(--color-point);
   cursor: pointer;
   white-space: nowrap;
 }
 
 .category--selected {
-  background-color:  var(--color-accent);
-  color: var(--color-white);
+  background-color:  var(--color-point);
+  color: var(--color-dark);
 }
 
 .category__count {
@@ -497,7 +502,7 @@ button:focus {
   height: 4.5rem;
   border-radius: 100%;
   text-align: center;
-  box-shadow: 5px 5px 0px 0px var(--color-orange);
+  box-shadow: 5px 5px 0px 0px var(--color-point);
   transition: opacity 300ms ease-in;
 }
 
