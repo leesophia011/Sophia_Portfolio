@@ -1,2 +1,0 @@
-# Sophia_Portfolio
- 
