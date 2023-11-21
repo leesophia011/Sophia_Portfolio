@@ -67,6 +67,7 @@ body {
 h1,
 h2,
 h3,
+p,
 ul {
   margin: 0;
 }
@@ -586,19 +587,6 @@ button:focus {
     font-size: 2rem;
   }
 
-  /* .project-name{
-    line-height: 0.8;
-  } */
-
-  .project__metadata{
-    display:none;
-  }
-  /* .work__btn {
-  padding: 0.2rem 0.3rem !important;}
-
-  .project__title{
-    display:none;
-  } */
   .description {
     font-size: 1rem;
   }
