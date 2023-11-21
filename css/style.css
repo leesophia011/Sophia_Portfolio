@@ -587,8 +587,9 @@ button:focus {
   }
 
   .project-name{
-    line-height: 1;
+    line-height: 0.8;
   }
+
   .project__metadata{
     display:none;
   }
