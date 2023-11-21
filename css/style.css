@@ -67,7 +67,6 @@ body {
 h1,
 h2,
 h3,
-p,
 ul {
   margin: 0;
 }
@@ -587,6 +586,9 @@ button:focus {
     font-size: 2rem;
   }
 
+  .project-name{
+    line-height: 1;
+  }
   .project__metadata{
     display:none;
   }
