@@ -586,9 +586,9 @@ button:focus {
     font-size: 2rem;
   }
 
-  .project-name{
+  /* .project-name{
     line-height: 0.8;
-  }
+  } */
 
   .project__metadata{
     display:none;
