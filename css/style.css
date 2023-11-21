@@ -593,13 +593,12 @@ button:focus {
   .project__metadata{
     display:none;
   }
-  .work__btn {
-  /* margin: 1rem; */
-    padding: 0.2rem 0.3rem !important;}
+  /* .work__btn {
+  padding: 0.2rem 0.3rem !important;}
 
   .project__title{
     display:none;
-  }
+  } */
   .description {
     font-size: 1rem;
   }
