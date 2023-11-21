@@ -587,11 +587,15 @@ button:focus {
     display:none;
   }
 
+  .Name{
+    display:none;
+  }
+
   .work__btn{
     margin:0px;
-    padding: 0rem 1rem;
+    padding: 0.8rem 1rem;
   }
-  
+
   .section {
     padding: 3rem 2rem;
   }
