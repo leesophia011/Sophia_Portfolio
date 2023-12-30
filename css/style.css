@@ -402,9 +402,6 @@ button:focus {
   opacity: 1;
   top: 0;
 }
-#imageContainer{
-  display:none;
-}
 
 .projects {
   display: grid;
