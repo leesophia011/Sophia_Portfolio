@@ -350,25 +350,21 @@
                   <p class="Name">UVA
                   </p>
                   <!-- <a class="work__btn" href="#" target="_blank">View Enl</a> -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    View Enl
-                   </button>
-                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">UVA</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body mx-auto">
-                          <img src="images/projects/UVA_enl.png">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+                  <button id="login">View Enl</button>   
                 </div>
               </div>
+              <div class="black-bg">
+                <div class="white-bg">
+                  <h4>UVA</h4>
+                   <form>
+                    <div>
+                      <img src="images/projects/UVA_enl.png" class="img-fluid mx-auto" alt="Responsive image" style="width:90%;">
+                     </div>
+                     <!-- <button type="submit" class="btn btn-primary">전송</button> -->
+                     <button type="button" class="btn btn-secondary float-right" id="close">x</button>
+                   </form> 
+                  </div>
+            </div>
             </li>
             <li class="project" data-type="enl">
               <div>
@@ -473,7 +469,12 @@
   <script type="text/javascript" src="src/main.js"></script>
   <script type="text/javascript" src="src/project.js"></script>
 <script>
-
+  $('#login').on('click',function(){
+    $('.black-bg').addClass('show-modal');
+  });
+$('#close').on('click',function(){
+    $('.black-bg').removeClass('show-modal')
+  });
 </script>
 
 </body>
