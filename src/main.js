@@ -41,7 +41,10 @@ navbarMenu.addEventListener('click', () => {
 });
 
 //project-enl
-
+function showImage() {
+  var imageContainer = document.getElementById("imageContainer");
+  imageContainer.style.display = "block";
+}
 
 
 
