@@ -355,6 +355,19 @@ button:focus {
   border-radius: 4px;
 }
 
+.work__btn1, .work__btn2, .work__btn3, .work__btn4{
+  display: inline-block;
+  background-color: var(--color-point);
+  color: var(--color-dark);
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+button:active {
+  border-style: outset;
+}
+
 .categories {
   display: flex;
   justify-content: center;

@@ -125,36 +125,26 @@
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>Bootstrap (Framework)</span>
+                    <span>Bootstrap</span>
                   </div>
                 </li>
                 </ul>
-                <ul>
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span>#C</span>
-                  </div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata">
-                  <span>.NET Core</span>
-                </div>
-            </li>
-            <li class="bar">
-              <div class="bar__metadata">
-                <span>Razor</span>
-              </div>
-          </li>
-          <li class="bar">
-            <div class="bar__metadata">
-              <span>Azure</span>
-            </div>
-        </li>
-        <li class="bar">
-          <div class="bar__metadata">
-            <span>MS Team Foundation</span>
-          </div>
-      </li>
+                <ul class="ms-5">
+                  <li class="bar">
+                    <div class="bar__metadata">
+                      <span>ASP.NET Razor</span>
+                    </div>
+                </li>
+                  <li class="bar">
+                    <div class="bar__metadata">
+                      <span>Razor</span>
+                    </div>
+                </li>
+                  <li class="bar">
+                    <div class="bar__metadata">
+                      <span>Azure DevOps</span>
+                    </div>
+                </li>
                   <li class="bar">
                     <div class="bar__metadata">
                       <span>Responsive Web Design</span>
@@ -208,11 +198,6 @@
             <li>
               <button class="category" data-category="MicroSite">
                 Micro Site <span class="category__count">3</span>
-              </button>
-            </li>
-            <li>
-              <button class="category" data-category="enl">
-                Email<span class="category__count">4</span>
               </button>
             </li>
           </ul>
@@ -337,8 +322,15 @@
                 </div>
               </div>
             </li>
+            </ul>
 <!--enls-->
-            <li class="project" data-type="enl">
+<div class="mt-4 mb-5">
+  <button class="category">
+    Email<span class="category__count">4</span>
+  </button>
+</div>
+          <ul class="projects">
+           <li class="project">
               <div>
                 <img
                   src="images/projects/UVA_enl.png"
@@ -347,15 +339,28 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Enl</h3>
-                  <p class="Name">UVA
-                  </p>
-                  <a class="work__btn" href="#" target="_blank">View Enl</a>
-                
+                  <p class="Name">UVA</p>
+                <button type="button" class="btn work__btn1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  View
+                </button>
+              </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                      
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" id="modalBody">
+                        <!-- <img src="images/projects/enl_uva.png" style="width:100%;"> -->
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-       
             </li>
-            <li class="project" data-type="enl">
+
+            <li class="project" >
               <div>
                 <img
                   src="images/projects/ahn_enl.png"
@@ -364,43 +369,85 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Enl</h3>
-                  <p class="Name">AHN
-                </p>
-                <a class="work__btn" href="#" target="_blank">View Enl</a>
+                  <p class="Name">AHN</p>
+                <button type="button" class="btn work__btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  View
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                       
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" id="modalBody">
+                        <!-- <img src="images/projects/enl_ahn.png" style="width:100%;"> -->
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </li>
-            <li class="project" data-type="enl">
-              <div>
-                <img
-                  src="images/projects/idse_enl.png"
-                  alt="enl3"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Enl</h3>
-                  <p class="Name">IDSE
-                  </p>
-                  <a class="work__btn" href="#" target="_blank">View Enl</a>
-                </div>
-              </div>
-            </li>
-            <li class="project" data-type="enl">
+
+            <li class="project" >
               <div>
                 <img
                   src="images/projects/spc_enl.png"
-                  alt="enl4"
+                  alt="enl2"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Enl</h3>
-                  <p class="Name">SPC
-                  </p>
-                  <a class="work__btn" href="#" target="_blank">View Enl</a>
+                  <p class="Name">SPC</p>
+                <button type="button" class="btn work__btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  View
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                       
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" id="modalBody">
+                        <!-- <img src="images/projects/enl_ahn.png" style="width:100%;"> -->
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </li>
-          </ul>
+
+            <li class="project" >
+              <div>
+                <img
+                  src="images/projects/idse_enl.png"
+                  alt="enl2"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Enl</h3>
+                  <p class="Name">IDSE</p>
+                <button type="button" class="btn work__btn4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  View
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                       
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" id="modalBody">
+                        <!-- <img src="images/projects/enl_ahn.png" style="width:100%;"> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
         </div>
       </section>
    
@@ -457,7 +504,29 @@
 
   <script type="text/javascript" src="src/main.js"></script>
   <script type="text/javascript" src="src/project.js"></script>
+  <script>
+    document.querySelector('.work__btn1').addEventListener('click', function () {
+        // Dynamically update the modal image source here
+        var modalBody = document.getElementById('modalBody');
+        modalBody.innerHTML = '<img src="images/projects/enl_uva.png" style="width:100%;">';
+    });
+    document.querySelector('.work__btn2').addEventListener('click', function () {
+        // Dynamically update the modal image source here
+        var modalBody = document.getElementById('modalBody');
+        modalBody.innerHTML = '<img src="images/projects/enl_ahn.png" style="width:100%;">';
+    });
+    document.querySelector('.work__btn3').addEventListener('click', function () {
+        // Dynamically update the modal image source here
+        var modalBody = document.getElementById('modalBody');
+        modalBody.innerHTML = '<img src="images/projects/enl_spc.png" style="width:100%;">';
+    });
+    document.querySelector('.work__btn4').addEventListener('click', function () {
+        // Dynamically update the modal image source here
+        var modalBody = document.getElementById('modalBody');
+        modalBody.innerHTML = '<img src="images/projects/enl_idse.png" style="width:100%;">';
+    });
 
+</script>
 
 </body>
 </html>
