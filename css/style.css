@@ -364,9 +364,7 @@ button:focus {
   font-weight: bold;
   border-radius: 4px;
 }
-button:active {
-  border-style: outset;
-}
+
 
 .categories {
   display: flex;
